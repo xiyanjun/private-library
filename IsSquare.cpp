@@ -1,12 +1,12 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-//Ö±½Óµ÷ÓÃIsSquareº¯Êı£¬ÊäÈëÎªËÄ¸öµãµÄ×ø±ê£¬Êä³öÎªtrue or false;
-//ÇóÁ½µã¼äµÄ¾àÀë
+//ç›´æ¥è°ƒç”¨IsSquareå‡½æ•°ï¼Œè¾“å…¥ä¸ºå››ä¸ªç‚¹çš„åæ ‡ï¼Œè¾“å‡ºä¸ºtrue or false;
+//æ±‚ä¸¤ç‚¹é—´çš„è·ç¦»
 double Distance(int x1,int y1,int x2,int y2){
     return sqrt(pow((x1-x2),2)+pow((y1-y2),2));
 }
-//ÅĞ¶ÏÈı¸öµãÊÇ·ñ¹¹³ÉÖ±½Ç£¬µÚÒ»¸ö²ÎÊıµãÊÇ¶¥µã
+//åˆ¤æ–­ä¸‰ä¸ªç‚¹æ˜¯å¦æ„æˆç›´è§’ï¼Œç¬¬ä¸€ä¸ªå‚æ•°ç‚¹æ˜¯é¡¶ç‚¹
 bool IsRightAngle(int x1,int y1,int x2,int y2,int x3,int y3){
     if((x2-x1)*(x3-x1)+(y2-y1)*(y3-y1)==0)
         return true;
